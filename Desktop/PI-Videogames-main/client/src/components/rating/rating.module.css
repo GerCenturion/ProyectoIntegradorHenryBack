@@ -1,0 +1,11 @@
+.rating {
+    font-size: 25px; /* Tamaño de las estrellas */
+    color: rgb(234, 238, 8); /* Color de las estrellas llenas */
+  }
+  
+  .rating span {
+    display: inline-block;
+    width: 25px; /* Espacio entre las estrellas */
+    text-align: center;
+  }
+  

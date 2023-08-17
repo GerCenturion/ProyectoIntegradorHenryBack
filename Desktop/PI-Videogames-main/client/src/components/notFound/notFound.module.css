@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.not {
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/Mario.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.notContent {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.103); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}

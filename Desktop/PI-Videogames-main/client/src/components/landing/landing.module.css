@@ -1,0 +1,27 @@
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.btnneon {
+
+  position: absolute;
+
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 15px 30px;
+  color: rgb(233, 174, 245);
+  letter-spacing: 4px;
+  font-size: 36px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  backdrop-filter: blur(1px);
+}
+.btnneon:hover {
+  background: #ff00d9f8;
+  box-shadow: 0 0 10px #ff00bfe7, 0 0 40px #ff00bfe7, 0 0 80px #ff00bfe7;
+  transition-delay: 0, 5s;
+}

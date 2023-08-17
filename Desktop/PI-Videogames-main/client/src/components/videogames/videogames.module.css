@@ -1,0 +1,102 @@
+.contentInput {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .contentInput {
+    padding: 2px 160px;
+    background-color: rgba(0, 0, 0, 0.445);
+    flex-direction: column;
+    color: rgb(245, 183, 174);
+    background-color: rgba(0, 0, 0, 0.445);
+    border-color: rgb(66, 29, 232);
+
+  }
+}
+
+.search,
+.alpha,
+.genres {
+  color: rgb(0, 0, 0);
+  background: #b700ffd4;
+  color: rgb(249, 234, 234);
+  background-color: rgba(240, 233, 233, 0.132); /* Aquí ajusta el valor alfa según la opacidad deseada */
+  font-size: 15px;
+  align-items: end;
+}
+
+.search:hover,
+.alpha:hover,
+.genres:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(238, 233, 240, 0)
+}
+
+.contentCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-decoration: none;
+}
+
+.textContent {
+  text-decoration: none;
+}
+
+.contentPaginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.paginate {
+  padding: 6px 10px;
+  border: rgba(0, 0, 0, 0.945) solid;
+  border-radius: 30%;
+  background-color: rgba(66, 29, 232, 0.258);
+  display: inline-block;
+  /* Cambiado a inline-block para que los elementos estén en línea */
+  margin: 8px;
+  /* Espacio entre elementos */
+}
+
+.paginate:hover {
+  background: #b700ffd4;
+  box-shadow: 0 0 10px #b700ff5b, 0 0 40px #ff0022e7, 0 0 80px #ff0022e7;
+  transition-delay: 0, 5s;
+  border-radius: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .paginate {
+    margin: 2px;
+  }
+}
+
+
+.select {
+  padding: 6px 10px;
+  margin: 8px;
+  border: rgba(0, 0, 0, 0.945) solid;
+  background: #b700ffd4;
+  box-shadow: 0 0 10px #b700ff5b, 0 0 40px #ff0022e7, 0 0 80px #ff0022e7;
+  transition-delay: 0, 5s;
+  border-radius: 30%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .contentCards {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contentCards {
+    grid-template-columns: auto auto;
+  }
+}
