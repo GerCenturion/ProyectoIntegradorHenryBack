@@ -16,8 +16,8 @@ const FavoriteModel = require('./models/Favorite')
 // );
 
 const sequelize = new Sequelize(
-   // `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/rickandmorty`,
-   DATABASE_URL,
+   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/rickandmorty`,
+   // DATABASE_URL,
    { logging: false, native: false }
 );
 
