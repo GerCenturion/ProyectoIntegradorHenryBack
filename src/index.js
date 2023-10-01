@@ -36,7 +36,7 @@
 // server.use(express.json());
 // server.use('/rickandmorty', router)
 
-const PORT = 3001;
+const PORT = 6881;
 const server = require('./app')
 const { conn } = require('./DB_connection')
 const {PGPORT} = requiere = process.env;
