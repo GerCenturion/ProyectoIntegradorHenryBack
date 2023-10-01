@@ -39,10 +39,11 @@
 const PORT = 3001;
 const server = require('./app')
 const { conn } = require('./DB_connection')
+const {PGPORT} = requiere = process.env;
 
 conn.sync({ force: false }).then(() => {
     server.listen(PORT, () => {
-        console.log('Server raised in port: ' + PORT);
+        console.log('Server raised in port: ' + PGPORT);
     });
 })
 
