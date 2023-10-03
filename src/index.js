@@ -36,13 +36,13 @@
 // server.use(express.json());
 // server.use('/rickandmorty', router)
 
-const PORT = 3001;
 const server = require('./app')
 const { conn } = require('./DB_connection')
+const { PGPORT } = process.env;
 
 conn.sync({ force: false }).then(() => {
-    server.listen(PORT, () => {
-        console.log('Server raised in port: ' + PORT);
+    server.listen(PGPORT, () => {
+        console.log('Server raised in port: ' + PGPORT);
     });
 })
 
